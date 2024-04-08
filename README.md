@@ -1,3 +1,1 @@
 # Proyecto Front
-
-Un texto
