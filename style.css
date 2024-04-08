@@ -11,7 +11,7 @@ nav {
 
 .topnav a {
   float: left;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.807);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -22,13 +22,12 @@ nav {
   color: rgb(31, 23, 185);
 }
 
-/* Add a color to the active/current link */
+/* esto a arreglar */
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
 }
 
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
+img {
+    padding: 50px;
 }
