@@ -9,43 +9,128 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="./imagenes/Estetoscopio.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header>
       <nav>
-        <a href="./index.html">Inicio</a>
-        <a href="./acercade.html">Quiénes somos</a>
-        <a href="./turnos.html">Turnos</a>
-        <a href="./contacto.html">Contacto</a>
+        <div class="logo">
+          <a href="../index.html">
+            <img class="img-logo" src="./img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="topnav">
+          <a class="section-nav1" href="../index.html">Inicio</a>
+          <a class="section-nav1" href="../acercade.html">Quiénes somos</a>
+          <a class="section-nav1" href="../turnos.html">Turnos</a>
+          <a class="section-nav1" href="../contacto.html">Contacto</a>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+            />
+          </svg>
+        </div>
+        <!-- <h1>Instituto clínico de diagnóstico</h1> -->
+        <!-- <i class="fa-solid fa-stethoscope"></i> -->
       </nav>
-      <i class="fa-solid fa-stethoscope"></i>
-      <h1>Instituto clínico de diagnóstico</h1>
     </header>
     <main>
-      <h2>Quiénes somos</h2>
-      <p>
-        Nuestro Instituto está conformado por profesionales de la salud con una
-        excelente formación en Especialidades clínicas. Nos especializamos en la
-        evaluación clínica y buscamos dar solución a cuadros clínicos complejos.
-      </p>
-      <h2>Staff</h2>
-      <ul>
-        <li>
-          Dra. Marina Fernandez - Especialista en Medicina Interna y
-          gerontología
-          <img src="./imagenes/Medica 1.jpg" alt="Foto médica" width="150" />
-        </li>
-        <li>Dr. Juan Rodriguez - Especialista en Reumatología</li>
-        <img src="./imagenes/Medico 1.avif" alt="Foto médico" width="150" />
-        <li>Dra. Sofía Perez - Especialista en Infectología</li>
-        <img src="./imagenes/Medica 2.jpg" alt="Foto médica" width="150" />
-        <li>Dr. Manuel Salazar - Especialista en Clínica Médica</li>
-        <img src="./imagenes/Medico 2.webp" alt="Foto médico" width="150" />
-        <li>Dra. Susana Gomez - Especialista en Hematología</li>
-        <img src="./imagenes/Medica 3.jpg" alt="Foto médica" width="150" />
+      <div class="quienes-somos" data-aos="flip-down" data-aos-duration="2500">
+        <h2 class="somos">Quiénes somos</h2>
+        <p class="somos-p">
+          Nuestro Instituto está conformado por profesionales de la salud con
+          una excelente formación en Especialidades clínicas. <br />
+          Nos especializamos en la evaluación clínica y buscamos dar solución a
+          cuadros clínicos complejos.
+        </p>
+      </div>
+      <h2 class="staff-title">Nuestro staff</h2>
+      <ul class="staff">
+        <div class="staff-1">
+          <p class="dr-staff" data-aos="fade-right" data-aos-duration="1500">
+            Dra. Marina Fernandez - Especialista en Medicina Interna y
+            gerontología
+          </p>
+          <img
+            class="img-dr"
+            src="./img/medico2.jpg"
+            alt="Foto médica"
+            width="150"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          />
+        </div>
+        <div class="staff-2">
+          <p class="dr-staff" data-aos="fade-left" data-aos-duration="1500">
+            Dr. Juan Rodriguez - Especialista en Reumatología
+          </p>
+          <img
+            class="img-dr"
+            src="./img/medico1.jpg"
+            alt="Foto médico"
+            width="150"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          />
+        </div>
+        <div class="staff-1">
+          <p class="dr-staff" data-aos="fade-right" data-aos-duration="1500">
+            Dra. Sofía Perez - Especialista en Infectología
+          </p>
+          <img
+            class="img-dr"
+            src="./img/medico4.jpeg"
+            alt="Foto médica"
+            width="150"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          />
+        </div>
+        <div class="staff-2">
+          <p class="dr-staff" data-aos="fade-left" data-aos-duration="1500">
+            Dr. Manuel Salazar - Especialista en Clínica Médica
+          </p>
+          <img
+            class="img-dr"
+            src="./img/medico3.png"
+            alt="Foto médico"
+            width="150"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          />
+        </div>
+        <div class="staff-1">
+          <p class="dr-staff" data-aos="fade-right" data-aos-duration="1500">
+            Dra. Susana Gomez - Especialista en Hematología
+          </p>
+          <img
+            class="img-dr"
+            src="./img/medico5.jpg"
+            alt="Foto médica"
+            width="150"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          />
+        </div>
       </ul>
     </main>
 
     <footer></footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

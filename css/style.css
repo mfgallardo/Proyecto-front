@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* INDEX */
+
+.body-index {
+  background-image: url(../img/foto-portada.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-index {
+  background-color: #4cb1b100;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  text-align: center;
+  padding: 1rem;
+  align-items: center;
+  margin-top: 1%;
+}
+
+nav {
+  background-color: #43aaaa;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  text-align: center;
+  padding: 1rem;
+  align-items: center;
+  margin-top: 1%;
+  /* position: fixed;
+  width: 100%; */
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+}
+
+.img-logo {
+  width: 70%;
+  height: auto;
+  padding: 2%;
+  transition: transform 0.3s;
+}
+
+.img-logo:hover {
+  transform: scale(1.1);
+}
+
+.topnav a {
+  float: left;
+  color: rgba(255, 255, 255, 0.807);
+  text-align: center;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  transition: transform 0.3s;
+}
+
+.section-nav {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+}
+
+.topnav .section-nav:hover {
+  color: rgb(176, 232, 231);
+  transform: scale(1.1);
+}
+
+.topnav .section-nav1:hover {
+  color: rgb(43, 59, 230);
+  transform: scale(1.1);
+}
+
+.bi-person-circle {
+  transition: transform 0.3s;
+}
+
+.bi-person-circle:hover {
+  transform: scale(1.1);
+}
+
+/* esto a arreglar */
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.portada {
+  display: flex;
+  justify-content: center;
+}
+
+.img-portada {
+  width: 60%;
+  height: auto;
+  margin-top: 5%;
+}
+
+.main-index {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-portada {
+  font-size: 2.5rem;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: max-content;
+}
+
+/* ACERCA DE */
+
+.quienes-somos {
+  border: solid 2px rgba(160, 161, 166, 0.489);
+  margin: 7%;
+  box-shadow: 0 0 3px rgba(200, 200, 200, 0.5), 0 0 5px rgba(200, 200, 200, 0.5),
+    0 0 8px rgba(200, 200, 200, 0.5), 0 0 10px rgba(200, 200, 200, 0.5),
+    0 0 15px rgba(200, 200, 200, 0.5), 0 0 18px rgba(200, 200, 200, 0.5),
+    0 0 22px rgba(200, 200, 200, 0.5), 0 0 30px rgba(200, 200, 200, 0.5);
+}
+
+.somos {
+  display: flex;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.875rem;
+  padding: 2%;
+  color: rgb(74, 74, 74);
+}
+
+.somos-p {
+  display: flex;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 1.875rem;
+  padding: 2%;
+  color: #2f7c7c;
+}
+
+.staff-title {
+  display: flex;
+  justify-content: center;
+  font-size: 1.875rem;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin-bottom: 6%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #43aaaa;
+  color: white;
+}
+
+.staff-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3%;
+  background-color: rgb(24, 24, 181);
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+.staff-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3%;
+  background-color: rgb(24, 24, 181);
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+.dr-staff {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 5%;
+  color: #4dcece;
+}
+
+.img-dr {
+  width: 35%;
+  height: auto;
+  padding: 3%;
+}
+
+/* TURNOS  */
+
+.title-turnos {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  font-size: 2.1875rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.turnos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  height: 50vh;
+  align-items: center;
+}
+
+.tipo-turno {
+  width: 90%;
+}
+
+.tipo {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(24, 24, 181);
+  border: 3px solid;
+  border-color: #43aaaa;
+  transition: transform 0.3s;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
+.tipo-a {
+  text-decoration: none;
+  color: #4dcece;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.tipo:hover {
+  transform: scale(1.1);
+}
+
+/*CONTACTO*/
+
+.main-contacto {
+  height: 80vh;
+}
+
+.title-contacto {
+  display: flex;
+  justify-content: center;
+  font-size: 1.875rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 1%;
+}
+
+.datos-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 70vh;
+  background-color: rgb(24, 24, 181);
+  margin: 2%;
+  box-shadow: 0 0 3px rgba(200, 200, 200, 0.5), 0 0 5px rgba(200, 200, 200, 0.5),
+    0 0 8px rgba(200, 200, 200, 0.5), 0 0 10px rgba(200, 200, 200, 0.5),
+    0 0 15px rgba(200, 200, 200, 0.5), 0 0 18px rgba(200, 200, 200, 0.5),
+    0 0 22px rgba(200, 200, 200, 0.5), 0 0 30px rgba(200, 200, 200, 0.5);
+}
+
+.section-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-hospital {
+  width: 3.125rem;
+  height: auto;
+}
+
+.dato {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5625rem;
+  margin-bottom: 5%;
+}
+
+.bi-hospital,
+.bi-telephone,
+.bi-envelope,
+.bi-geo-alt-fill {
+  color: #43aaaa;
+  margin-bottom: 4%;
+}
+
+.section-contacto1 {
+  border-right: 1px solid #43aaaa;
+}
