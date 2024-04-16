@@ -49,6 +49,33 @@
     </header>
     <main class="main-contacto">
       <h2 class="title-contacto">Contacto</h2>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" />
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" />
+        <label for="mail">Mail de contacto</label>
+        <input type="email" name="mail" />
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="telefono" />
+        <label for="region">Región donde vive</label>
+        <input type="radio" name="region" value="CABA" />CABA
+        <input type="radio" name="region" value="AMBA" />AMBA
+        <input type="radio" name="region" value="Interior del país" />Interior
+        del país
+        <label for="consulta">Escriba su consulta</label>
+        <input type="text" name="consulta" />
+        <label for="imagen">Seleccione una imagen</label>
+        <input type="file" name="imagen" accept="imagen/*" />
+        <input type="submit" value="Subir imagen" />
+        <label for="respuesta">Medio de contacto preferido</label>
+        <select name="respuesta">
+          <option>Correo</option>
+          <option>Teléfono</option>
+        </select>
+        <label for="enviar" value="Enviar"></label>
+        <input type="submit" value="Enviar" />
+      </form>
       <div class="datos-contacto">
         <section class="section-contacto1">
           <div class="section-contacto">
