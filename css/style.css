@@ -39,6 +39,7 @@ nav {
 .topnav {
   display: flex;
   justify-content: space-around;
+  background-color: #43aaaa;
 }
 
 .logo {
@@ -300,4 +301,87 @@ nav {
 
 .section-contacto1 {
   border-right: 1px solid #43aaaa;
+}
+
+/* FORMULARIO DE INGRESO  */
+
+
+.form-registro-datos{
+  width: 400px;
+  background: rgb(24, 24, 181);
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-registro-historial{
+  width: 400px;
+  background:rgb(24, 24, 181);
+  padding: 30px;
+  margin: auto;
+  margin-top: auto;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-registro-botones{
+  width: 400px;
+  background:rgb(24, 24, 181);
+  padding: 30px;
+  margin: auto;
+  margin-top: auto;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-registro-datos h4 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.Campos {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #43aaaa;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-registro-botones p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-registro-botones a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-registro-botones a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-registro-botones .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
 }
