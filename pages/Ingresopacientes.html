@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Ingreso de Pacientes</title>
+    <script
+      src="https://kit.fontawesome.com/147c328576.js"
+      crossorigin="anonymous">     
+   </script>
+    <link rel="icon" href="../img/Estetoscopio.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="body-index">
+    <header>
+      <nav class="nav-index">
+        <div class="logo">
+          <a href="../index.html">
+            <img class="img-logo" src="../img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <ul class="topnav">
+            <li><a class="section-nav" href="./index.html">Inicio</a></li>
+            <li><a class="section-nav" href="../pages/acercade.html">Quiénes somos</a></li>
+            <li><a class="section-nav" href="../pages/turnos.html">Turnos</a></li>
+            <li><a class="section-nav" href="../pages/Ingresopacientes">Ingreso Pacientes</a></li>
+           <li><a class="section-nav" href="../pages/contacto.html">Contacto</a></li> 
+        </ul>
+
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+            />
+          </svg>
+        </div>
+        <!-- <h1>Instituto clínico de diagnóstico</h1> -->
+        <!-- <i class="fa-solid fa-stethoscope"></i> -->
+      </nav>
+    </header>
+<body>
+  <div class="grid-container">
+    <div class="item1"><section class="form-registro-datos"><h4 class="titulo">Formulario Registro</h4></SECTION></div>
+    <div class="item3"> <section class="form-registro-datos" >
+        
+            <form class="form-registro-datos">
+              
+              <h2 class="fh2">Datos Personales</h2>
+              <br>
+              <div>
+                  <label for="name">Nombre:</label>
+                 <input class="Campos" type="text" placeholder="Juan Perez" id="Nombre" name="Nombre">
+              </div>
+              <div><br></div>
+              <div>
+                  <label for="email">Email:</label>
+                  <input class="Campos"type="text" placeholder="juan.perez@mail.com" id="email" name="email">
+              </div>
+              <div><br></div>
+              <div>
+                  <label for="address">Dirección:</label>
+                  <input class="Campos" type="text" placeholder="cualquier ,direccion" id="Dirección" name="Dirección">
+              </div>
+              <div><br></div>
+              <div>
+                  <label for="phone">Teléfono:</label>
+                  <input class="Campos"type="number" placeholder="11 6838 1311" id="Teléfono" name="Teléfono">
+              </div>
+              <div><br></div>
+              <div>
+                  <label for="phone">DNI:</label>
+                  <input class="Campos"type="number" placeholder="70323232" id="DNI" name="DNI">
+              </div>
+              <div><br></div>
+              <div>
+              
+                  <p input class="Campos">Género:
+                  
+                  <input  type="radio" name="gender" id="man" value="man">
+                  <label for="man">Hombre:</label>
+              
+                  <input  type="radio" name="gender" id="woman" value="woman">
+                  <label for="woman">Mujer:</label>
+              </p>
+              </div>
+              <div><br></div>
+              <div><br></div>
+              <div><br></div>
+              <div><br></div>
+              
+              
+        
+   
+        </form>
+        </section>
+      </div>  
+   
+      <div class="item4"> <section class="form-registro-historial">
+        <div>
+        
+          <h2 class="fh2">Historial Medico</h2>
+          <br>
+          
+          <div>
+          
+              <p class="Campos">Operaciones:
+              
+              <input type="radio" name="Operaciones" id="operasi" value="operasi">
+              <label for="operasi">si:</label>
+          
+              <input type="radio" name="Operaciones" id="operano" value="operano">
+              <label for="operano">no:</label>
+              </p>
+          </div>
+          <div>
+              <label for="name">Cuales?</label>
+              <input class="Campos" type="text" placeholder="Operaciones" id="operacual" name="operacual">
+          </div>
+          
+          <div>
+              <div><br></div>
+              <p class="Campos">Alergias:
+              
+              <input type="radio" name="alergias" id="alersi" value="alersi">
+              <label for="alersi">si:</label>
+          
+              <input type="radio" name="alergias" id="alerno" value="alerno">
+              <label for="alerno">no:</label>
+          </p>
+          </div>
+          <div>
+              <label for="name">Cual?</label>
+              <input class="Campos" type="text" placeholder="Alergias" id="alercual" name="alercual">
+          </div>
+          <div><br></div>
+          <div>
+          
+            <p class="Campos">Medicamentos:
+              
+              <input type="radio" name="Medicamentos" id="medisi" value="medisi">
+              <label for="medisi">si:</label>
+          
+              <input type="radio" name="Medicamentos" id="medino" value="medino">
+              <label for="medino">no:</label>
+          </p>
+          </div>
+          <div class="input-group">
+              <label for="Medicamentos">Cual?</label>
+              <input class="Campos" type="text" placeholder="Medicamentos" id="Medicamentos" name="Medicamentos">
+          </div>
+          <div><br></div>
+          
+          <div>
+          
+            <p class="Campos">Sangre Tipo:
+        
+              <input type="radio" name="sangretipo" id="sangrea" value="sangrea">
+              <label for="sangrea">A</label>
+              
+              <input type="radio" name="sangretipo" id="sangreb" value="sangreb">
+              <label for="sangreb">B</label>
+          
+              <input type="radio" name="sangretipo" id="sangreab" value="sangreab">
+              <label for="sangreab">AB</label>
+          
+              <input type="radio" name="sangretipo" id="sangre0" value="sangre0">
+              <label for="sangre0">0</label>
+          </p>
+        
+          </div>
+          <div><br></div>
+          <div class="radio-group">
+          
+            <p class="Campos">Factor:
+        
+              <input type="radio" name="Factor" id="Factorrh+" value="Factorrh+">
+              <label for="Factorrh+">RH+</label>
+              
+              <input type="radio" name="Factor" id="Factorrh-" value="Factorrh-">
+              <label for="Factorrh-">RH-</label>
+          
+          </p>
+        
+        </div>
+        
+        </section>
+        </div>
+    <div class="item5"><section class="form-registro-botones">
+            <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+            <input class="botons" type="submit" value="Registrar">
+            <p><a href="#">¿Ya tengo Cuenta?</a></p>
+        </section>
+        </div>
+  </div>
+  
+</body>
+</html>
