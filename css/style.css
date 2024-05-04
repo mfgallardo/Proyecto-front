@@ -306,32 +306,43 @@ nav {
 /* FORMULARIO DE INGRESO  */
 
 
+.titulo{
+text-align: center;
+
+}
+
+.fh2{
+
+  text-align: center;
+}
+
 .form-registro-datos{
-  width: 400px;
+  width: auto;
   background: rgb(24, 24, 181);
-  padding: 30px;
-  margin: auto;
-  margin-top: 50px;
+  padding: 10px;
+  margin: 0px;
+  margin-top: auto;
   border-radius: 4px;
   font-family: 'calibri';
   color: white;
-  box-shadow: 7px 13px 37px #000;
+ 
 }
 
 .form-registro-historial{
-  width: 400px;
+  width: auto;
   background:rgb(24, 24, 181);
   padding: 30px;
-  margin: auto;
+  margin: 0px;
   margin-top: auto;
   border-radius: 4px;
   font-family: 'calibri';
   color: white;
-  box-shadow: 7px 13px 37px #000;
+ 
+
 }
 
 .form-registro-botones{
-  width: 400px;
+  width: auto;
   background:rgb(24, 24, 181);
   padding: 30px;
   margin: auto;
@@ -339,7 +350,7 @@ nav {
   border-radius: 4px;
   font-family: 'calibri';
   color: white;
-  box-shadow: 7px 13px 37px #000;
+  text-align: center;
 }
 
 .form-registro-datos h4 {
@@ -348,7 +359,8 @@ nav {
 }
 
 .Campos {
-  width: 100%;
+  width: 400px;
+  max-width: 300px;
   background: #24303c;
   padding: 10px;
   border-radius: 4px;
@@ -366,6 +378,8 @@ nav {
   line-height: 40px;
 }
 
+
+
 .form-registro-botones a {
   color: white;
   text-decoration: none;
@@ -377,7 +391,8 @@ nav {
 }
 
 .form-registro-botones .botons {
-  width: 100%;
+  
+  max-width: 100px;
   background: #1f53c5;
   border: none;
   padding: 12px;
@@ -385,3 +400,81 @@ nav {
   margin: 16px 0;
   font-size: 16px;
 }
+
+/* GRID DEL FORMULARIO */
+
+.item1 { grid-area: titulo; }
+.item3 { grid-area: datos; }
+.item4 { grid-area: historia; }
+.item5 { grid-area: botones; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+
+    ' titulo titulo titulo titulo'
+    'datos datos historia historia'
+    ' botones botones botones botones';
+
+  gap: 0px;
+  width: 700px;
+  height: auto;
+  padding: 50px 0 0 25%;
+  
+  
+  
+}
+
+.grid-container > div {
+ 
+  
+  padding: auto 10px;
+  
+}
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 768px) {
+ 
+  .topnav {
+   display: block;
+   position: fixed;
+   top: 70px;
+   left: -200PX;
+   
+  }
+
+  svg{
+  display: none;
+
+  }
+  .Campos {
+    width: 400px;
+    max-width: 300px;
+  }
+  .Campos {
+    width: 300px;
+    max-width: 300px;
+    align-content: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+  
+      ' titulo titulo '
+      'datos datos' 
+      'historia historia'
+      ' botones botones ';
+  
+    gap: 0px;
+    width: 700px;
+    height: auto;
+    padding: 50px ;
+    justify-content: left;
+    align-content: center;
+    
+  
+}
+  }
