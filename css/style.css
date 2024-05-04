@@ -39,6 +39,7 @@ nav {
 .topnav {
   display: flex;
   justify-content: space-around;
+  background-color: #43aaaa;
 }
 
 .logo {
@@ -301,3 +302,179 @@ nav {
 .section-contacto1 {
   border-right: 1px solid #43aaaa;
 }
+
+/* FORMULARIO DE INGRESO  */
+
+
+.titulo{
+text-align: center;
+
+}
+
+.fh2{
+
+  text-align: center;
+}
+
+.form-registro-datos{
+  width: auto;
+  background: rgb(24, 24, 181);
+  padding: 10px;
+  margin: 0px;
+  margin-top: auto;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+ 
+}
+
+.form-registro-historial{
+  width: auto;
+  background:rgb(24, 24, 181);
+  padding: 30px;
+  margin: 0px;
+  margin-top: auto;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+ 
+
+}
+
+.form-registro-botones{
+  width: auto;
+  background:rgb(24, 24, 181);
+  padding: 30px;
+  margin: auto;
+  margin-top: auto;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  text-align: center;
+}
+
+.form-registro-datos h4 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.Campos {
+  width: 400px;
+  max-width: 300px;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #43aaaa;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-registro-botones p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+
+
+.form-registro-botones a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-registro-botones a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-registro-botones .botons {
+  
+  max-width: 100px;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+/* GRID DEL FORMULARIO */
+
+.item1 { grid-area: titulo; }
+.item3 { grid-area: datos; }
+.item4 { grid-area: historia; }
+.item5 { grid-area: botones; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+
+    ' titulo titulo titulo titulo'
+    'datos datos historia historia'
+    ' botones botones botones botones';
+
+  gap: 0px;
+  width: 700px;
+  height: auto;
+  padding: 50px 0 0 25%;
+  
+  
+  
+}
+
+.grid-container > div {
+ 
+  
+  padding: auto 10px;
+  
+}
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 768px) {
+ 
+  .topnav {
+   display: block;
+   position: fixed;
+   top: 70px;
+   left: -200PX;
+   
+  }
+
+  svg{
+  display: none;
+
+  }
+  .Campos {
+    width: 400px;
+    max-width: 300px;
+  }
+  .Campos {
+    width: 300px;
+    max-width: 300px;
+    align-content: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+  
+      ' titulo titulo '
+      'datos datos' 
+      'historia historia'
+      ' botones botones ';
+  
+    gap: 0px;
+    width: 700px;
+    height: auto;
+    padding: 50px ;
+    justify-content: left;
+    align-content: center;
+    
+  
+}
+  }
