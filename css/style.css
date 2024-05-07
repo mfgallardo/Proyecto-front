@@ -6,6 +6,22 @@
 
 /* INDEX */
 
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' -10,
+  'opsz' 50
+}
+
+
+ul{
+  list-style:none;
+}
+
 .body-index {
   background-image: url(../img/foto-portada.jpg);
   background-size: cover;
@@ -37,22 +53,24 @@ nav {
 }
 
 .topnav {
+  
   display: flex;
-  justify-content: space-around;
-  background-color: #43aaaa;
+  justify-content:space-between;
+  background-color: #43aaaaa9;
 }
 
 .logo {
-  display: flex;
+  display: center;
 }
 
 .img-logo {
+  
   width: 70%;
   height: auto;
-  padding: 2%;
+  padding: 2%; 
   transition: transform 0.3s;
-}
 
+}
 .img-logo:hover {
   transform: scale(1.1);
 }
@@ -69,11 +87,11 @@ nav {
 
 .section-nav {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .topnav .section-nav:hover {
-  color: rgb(176, 232, 231);
+  color: rgba(255, 255, 255, 0.932);
   transform: scale(1.1);
 }
 
@@ -248,190 +266,112 @@ nav {
 
 /*CONTACTO*/
 
-.main-contacto {
-  height: 80vh;
+body {
+  background: #03045f;
+  color: #fff;
+  line-height: 1.6;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0 1.5em;
 }
 
-.title-contacto {
-  display: flex;
-  justify-content: center;
-  font-size: 1.875rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding-top: 1%;
+.c-ul {
+  list-style: none;
+  padding: 0;
 }
 
-.datos-contacto {
+.c-titulo {
+  text-align: center;
+  font-size: 3em;
+}
+
+
+
+.c-Contenedor> * {
+  padding: 1em;
+  box-shadow: 0 0 20px 0 rgba(37, 14, 245, 0.3);
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+.c-formu {
+  background:  rgba(37, 14, 245, 0.3);
+}
+
+.c-formu form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  height: 70vh;
-  background-color: rgb(24, 24, 181);
-  margin: 2%;
-  box-shadow: 0 0 3px rgba(200, 200, 200, 0.5), 0 0 5px rgba(200, 200, 200, 0.5),
-    0 0 8px rgba(200, 200, 200, 0.5), 0 0 10px rgba(200, 200, 200, 0.5),
-    0 0 15px rgba(200, 200, 200, 0.5), 0 0 18px rgba(200, 200, 200, 0.5),
-    0 0 22px rgba(200, 200, 200, 0.5), 0 0 30px rgba(200, 200, 200, 0.5);
 }
 
-.section-contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.c-formu form label {
+  display: block;
 }
 
-.fa-hospital {
-  width: 3.125rem;
-  height: auto;
+.c-formu form p {
+  margin: 0;
+  padding: 1em;
 }
 
-.dato {
-  color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.5625rem;
-  margin-bottom: 5%;
+.c-formu form .block {
+  grid-column: 1 / 3;
 }
 
-.bi-hospital,
-.bi-telephone,
-.bi-envelope,
-.bi-geo-alt-fill {
-  color: #43aaaa;
-  margin-bottom: 4%;
-}
-
-.section-contacto1 {
-  border-right: 1px solid #43aaaa;
-}
-
-/* FORMULARIO DE INGRESO  */
-
-
-.titulo{
-text-align: center;
-
-}
-
-.fh2{
-
-  text-align: center;
-}
-
-.form-registro-datos{
-  width: auto;
-  background: rgb(24, 24, 181);
-  padding: 10px;
-  margin: 0px;
-  margin-top: auto;
-  border-radius: 4px;
-  font-family: 'calibri';
-  color: white;
- 
-}
-
-.form-registro-historial{
-  width: auto;
-  background:rgb(24, 24, 181);
-  padding: 30px;
-  margin: 0px;
-  margin-top: auto;
-  border-radius: 4px;
-  font-family: 'calibri';
-  color: white;
- 
-
-}
-
-.form-registro-botones{
-  width: auto;
-  background:rgb(24, 24, 181);
-  padding: 30px;
-  margin: auto;
-  margin-top: auto;
-  border-radius: 4px;
-  font-family: 'calibri';
-  color: white;
-  text-align: center;
-}
-
-.form-registro-datos h4 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.Campos {
-  width: 400px;
-  max-width: 300px;
+.c-formu form button,
+.c-formu form input,
+.c-formu form textarea {
+  width: 100%;
+  padding: .7em;
   background: #24303c;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #43aaaa;
-  font-family: 'calibri';
-  font-size: 18px;
-  color: white;
+  outline: 0;
+  color: #fff;
+  /* border-bottom: 1px solid #d63031; */
 }
 
-.form-registro-botones p {
-  height: 40px;
+.c-formu form button {
+  background: #B70E21;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.c-formu form button:hover,
+.c-formu form button:focus {
+  background: #d63031;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+
+.c-infomacion {
+  background:  rgba(0, 0, 0, 0.3); ;
+}
+
+.c-infomacion h4, .c-infomacion ul, .c-infomacion p {
   text-align: center;
-  font-size: 18px;
-  line-height: 40px;
+  margin: 0 0 1rem 0;
 }
 
+/* responsive */
 
-
-.form-registro-botones a {
-  color: white;
-  text-decoration: none;
+@media(min-width: 700px) {
+  .c-body {
+      padding: 0 4em;
+  }
+  .c-contenedor {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+  .c-contenedor > * {
+      padding: 2em;
+  }
+  .c-infomacion h4,
+  .c-infomacion ul,
+  .c-infomacion p {
+      text-align: left;
+  }
 }
-
-.form-registro-botones a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-.form-registro-botones .botons {
-  
-  max-width: 100px;
-  background: #1f53c5;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px;
-}
-
-/* GRID DEL FORMULARIO */
-
-.item1 { grid-area: titulo; }
-.item3 { grid-area: datos; }
-.item4 { grid-area: historia; }
-.item5 { grid-area: botones; }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-
-    ' titulo titulo titulo titulo'
-    'datos datos historia historia'
-    ' botones botones botones botones';
-
-  gap: 0px;
-  width: 700px;
-  height: auto;
-  padding: 50px 0 0 25%;
-  
-  
-  
-}
-
-.grid-container > div {
- 
-  
-  padding: auto 10px;
-  
-}
-
 
 /* RESPONSIVE */
 
@@ -441,11 +381,15 @@ text-align: center;
   .topnav {
    display: block;
    position: fixed;
-   top: 70px;
-   left: -200PX;
+   margin-top: auto;
    
   }
 
+ .box{
+  height: 100;
+  width: 100;
+  background-color: #43aaaaa9;
+ }
   svg{
   display: none;
 
@@ -475,6 +419,37 @@ text-align: center;
     justify-content: left;
     align-content: center;
     
+}
+
+span{
+  color: #fff;
+  display: block;
+  position: fixed;
+  margin-top: auto;
+}
+
+.topnav a {
+  float: right;
+  color: rgba(255, 255, 255, 0);
+  text-align: center;
+  padding: 1rem 1rem  ;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 10px;
+}
+
+.topnav .section-nav:hover {
+  color: rgba(255, 255, 255, 0);
+  transform: scale(1.1);
+}
+
+.img-logo {
+  
+  width: 100%;
+  height: auto;
+  padding: 2%; 
+  transition: transform 0.3s;
   
 }
+
   }
