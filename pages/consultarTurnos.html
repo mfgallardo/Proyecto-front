@@ -4,79 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/147c328576.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script
+      src="https://kit.fontawesome.com/147c328576.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
     <link rel="icon" href="./img/Estetoscopio.ico" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header>
-        <nav class="nav-index">
-            <div class="logo">
-                <a href="../index.html">
-                    <img class="img-logo" src="../img/logo.png" alt="logo" />
-                </a>
-            </div>
-            <div class="topnav">
-                <a class="section-nav" href="../index.html"><span class="material-symbols-outlined">home</span>Inicio</a>
-                <a class="section-nav" href="../pages/acercade.html"><span class="material-symbols-outlined">group</span>Quiénes somos</a>
-                <a class="section-nav" href="../pages/turnos.html"><span class="material-symbols-outlined">calendar_month</span></i> Turnos</a>
-                <a class="section-nav" href="../pages/Ingresopacientes.html"><span class="material-symbols-outlined">clinical_notes</span> Ingreso Pacientes</a>
-                <a class="section-nav" href="../pages/contacto.html"></i> <i class="material-symbols-outlined">unknown_document</i> Contacto</a>
-            </div>
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                </svg>
-            </div>
-            <!-- <h1>Instituto clínico de diagnóstico</h1> -->
-            <!-- <i class="fa-solid fa-stethoscope"></i> -->
-        </nav>
+      <nav class="nav-index">
+        <div class="logo">
+          <a href="../index.html">
+            <img class="img-logo" src="../img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="topnav">
+          <a class="section-nav" href="../index.html">Inicio</a>
+          <a class="section-nav" href="../pages/acercade.html">Quienes Somos</a>
+          <a class="section-nav" href="../pages/turnos.html">Turnos</a>
+          <a class="section-nav" href="../pages/Ingresopacientes.html"
+            >Nuevo Paciente</a
+          >
+          <a class="section-nav" href="../pages/contacto.html">Contacto</a>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+            />
+          </svg>
+        </div>
+        <!-- <h1>Instituto clínico de diagnóstico</h1> -->
+        <!-- <i class="fa-solid fa-stethoscope"></i> -->
+      </nav>
     </header>
     <main>
-        <div class="content-consultas">
-            <h1 class="c-titulo">Consulta tus turnos</h1>
-            <div class="c-contenedor animated bounceInUp">
-                <div class="c-formu">
-                    <form action="">
-                        <p>
-                            <label>Ingresa tu número de documento</label>
-                            <input type="text" name="Nombre">
-                        </p>
-                    </form>
-                    <div class="div-boton-enviar">
-                        <button class="boton-enviar">Consultar</button>
-                    </div>
-                </div>
+      <div class="content-consultas">
+        <h1 class="c-titulo">Consulta tus turnos</h1>
+        <div class="c-contenedor animated bounceInUp">
+          <div class="c-formu">
+            <form action="">
+              <p>
+                <label>Ingresa tu número de documento</label>
+                <input type="text" name="Nombre" />
+              </p>
+            </form>
+            <div class="div-boton-enviar">
+              <button class="boton-enviar">Consultar</button>
             </div>
+          </div>
         </div>
+      </div>
     </main>
     <footer>
-        <div class="c-footer">
-            <div class="foot1">
-                <h4>Instituto clínico del diagnóstico:</h4>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, fuga! Molestias iure dignissimos corrupti ea modi ad sunt dolorem laudantium, esse eaque, maxime, ut ab officia animi exercitationem tenetur! Corrupti?</h3>
-            </div>
-            <div class="foot2">
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Soler 1234, CABA</li>  
-                    <li><i class="fas fa-phone"></i> (+54) 11 4642 5581</li>
-                </ul>
-            </div>
-            <div class="foot3">
-                <ul>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.6270253618936!2d-58.67508052425606!3d-34.68936167292362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0e88d1b66ff%3A0xfdd6235db4356628!2sManuel%20Soler%201234%2C%20B1716MXZ%20Libertad%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714995005675!5m2!1ses-419!2sar"
-                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <!-- <li><i class="fas fa-envelope-open-text"></i> Info@institutoclinico.com</li> -->
-                </ul>
-            </div>
+      <div class="c-footer">
+        <div class="foot1">
+          <h4>Instituto clínico del diagnóstico:</h4>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            fuga! Molestias iure dignissimos corrupti ea modi ad sunt dolorem
+            laudantium, esse eaque, maxime, ut ab officia animi exercitationem
+            tenetur! Corrupti?
+          </h3>
         </div>
+        <div class="foot2">
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Soler 1234, CABA</li>
+            <li><i class="fas fa-phone"></i> (+54) 11 4642 5581</li>
+          </ul>
+        </div>
+        <div class="foot3">
+          <ul>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.6270253618936!2d-58.67508052425606!3d-34.68936167292362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0e88d1b66ff%3A0xfdd6235db4356628!2sManuel%20Soler%201234%2C%20B1716MXZ%20Libertad%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714995005675!5m2!1ses-419!2sar"
+              width="300"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <!-- <li><i class="fas fa-envelope-open-text"></i> Info@institutoclinico.com</li> -->
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
