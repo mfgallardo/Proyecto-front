@@ -7,6 +7,7 @@
 /*BODY DE TODOS MENOS DEL INDEX*/
 
 body {
+  min-height: 100vh;
   background: #03045f;
   color: #fff;
   line-height: 1.6;
@@ -60,25 +61,28 @@ ul {
 .nav-index {
   background-color: #4cb1b100;
   color: #fff;
-  display: grid;
+  display: flex;
   grid-template-columns: 20% 60% 20%;
   text-align: center;
   padding: 1rem;
   align-items: center;
   margin-top: 1%;
+  list-style: none;
+  justify-content: space-between;
 }
 
 nav {
   background-color: #43aaaa00;
   color: #fff;
-  display: grid;
+  display: flex;
+  justify-content: flex-end;
   grid-template-columns: 20% 60% 20%;
   text-align: center;
   padding: 1rem;
   align-items: center;
   margin-top: 1%;
-  /* position: fixed;
-  width: 100%; */
+  width: 100%; 
+  list-style: none;
 }
 
 .topnav {
@@ -92,6 +96,7 @@ nav {
 }
 
 .img-logo {
+  display: center;
   width: 70%;
   height: auto;
   padding: 2%;
@@ -109,6 +114,14 @@ nav {
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
   transition: transform 0.3s;
+}
+
+.topnav div{
+  float: left;
+  color: rgba(255, 255, 255, 0.807);
+  padding: 0.875rem 1rem;
+  transition: transform 0.3s;
+
 }
 
 .section-nav {
@@ -589,4 +602,28 @@ nav {
   .foot2 ul li {
     font-size: 1rem;
   }
+}
+
+.sidebar{
+  position:fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.764);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
 }
