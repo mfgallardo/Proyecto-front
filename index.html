@@ -34,7 +34,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
-
   <body class="body-index">
     <header>
       <nav class="sidebar"
@@ -42,11 +41,11 @@
           
           <li onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
         
-          <a class="section-nav" href="./index.html">Inicio</a>
-          <a class="section-nav" href="./pages/acercade.html">Quienes Somos</a>
-          <a class="section-nav" href="./pages/turnos.html">Turnos</a>
-          <a class="section-nav" href="./pages/Ingresopacientes.html">Nuevo Paciente</a>
-          <a class="section-nav" href="./pages/contacto.html">Contacto</a>
+          <a class="section-nav-s" href="./index.html">Inicio</a>
+          <a class="section-nav-s" href="./pages/acercade.html">Quienes Somos</a>
+          <a class="section-nav-s" href="./pages/turnos.html">Turnos</a>
+          <a class="section-nav-s" href="./pages/Ingresopacientes.html">Nuevo Paciente</a>
+          <a class="section-nav-s" href="./pages/contacto.html">Contacto</a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="26"
@@ -64,7 +63,9 @@
       </nav>
       <nav class="nav-index">
         <div class="logo">
-          <a href="./index.html"><img class="img-logo" src="./img/logo.png" alt="logo" /></a>
+          <a class="logo-container" href="./index.html">
+            <img class="img-logo" src="./img/logo.png" alt="logo" />
+          </a>
         </div>
         <div class="topnav">
           <a class="section-nav" href="./index.html">Inicio</a>
@@ -74,9 +75,11 @@
           <a class="section-nav" href="./pages/contacto.html">Contacto</a>
           <div class="section-nav">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" > <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" /> <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" /> </svg>
-          </div> 
-          <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
-        </div>
+          </div>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed" class="bi bi-person-circle"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+          
+            
+          </div>
       </nav>
     </header>
 

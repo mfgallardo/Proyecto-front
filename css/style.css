@@ -66,10 +66,10 @@ ul {
   text-align: center;
   padding: 1rem;
   align-items: center;
-  margin-top: 1%;
   list-style: none;
   justify-content: space-between;
 }
+
 
 nav {
   background-color: #43aaaa00;
@@ -80,7 +80,6 @@ nav {
   text-align: center;
   padding: 1rem;
   align-items: center;
-  margin-top: 1%;
   width: 100%; 
   list-style: none;
 }
@@ -164,6 +163,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 8rem;
 }
 
 .texto-portada {
@@ -424,10 +424,13 @@ nav {
 /******************RESPONSIVE**************************/
 
 /* Estilos para dispositivos celulares */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 895px) {
+  .section-nav{
+    display: none;
+  }
   .nav-index {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .topnav {
@@ -501,13 +504,12 @@ nav {
 }
 
 /* Estilos para tablets */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (max-width: 895px) and (max-width: 1023px) {
   .nav-index {
     grid-template-columns: 15% 70% 15%;
   }
-
-  .img-logo {
-    width: 90%;
+  .logo-container {
+    height: 0;
   }
 
   .topnav a {
@@ -618,12 +620,41 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  justify-content: left;
 }
 
 .sidebar li{
   width: 100%;
+  text-decoration: none;
 }
 
 .sidebar a{
   width: 100%;
+  text-decoration: none;
+}
+
+.section-nav-s{
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  text-align: right;
+}
+
+
+.section-nav-s {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  display: block;
+}
+
+.topnav .section-nav-s:hover {
+  color: rgba(255, 255, 255, 0.932);
+  transform: scale(1.1);
+}
+
+.topnav .section-nav1:hover {
+  color: rgb(43, 59, 230);
+  transform: scale(1.1);
 }
